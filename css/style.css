@@ -46,6 +46,19 @@ html::-webkit-scrollbar-thumb{
 section{
     padding: 5rem 10%;
 }
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading span{
+    font-size: 4.5rem;
+    color: var(--black);
+}
+.heading h3{
+    font-size: 2.5rem;
+    color: var(--peru);
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -177,21 +190,120 @@ section{
     font-size: 2rem;
 }
 
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.about .image{
+    flex: 1 1 41rem;
+}
+.about .image{
+    width: 100%;
+}
+.about .content{
+    flex: 1 1 41rem;
+}
+.about .content .title{
+    font-size: 4rem;
+    color: var(--black);
+}
+.about .content p{
+    font-size: 1.7rem;
+    color: var(--light-black);
+    padding: 1rem 0;
+    line-height: 2;
+}
+.about .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.about .content .icons-container .icons{
+    flex: 1 1 16rem;
+    text-align: center;
+    background: var(--light-bg);
+    padding: 3rem 2rem;
+}
+.about .content .icons-container .icons img{
+    height: 5rem;
+}
+.about .content .icons-container .icons h3{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--light-black);
+    font-weight: normal;
+}
 
+.food{
+    background: var(--light-bg);
+}
+.food .slide{
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: .5rem;
+    transform: scale(.9);
+    opacity: .5;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active{
+    background: var(--peru);
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0;
+}
 
+.food .swiper-slide-active{
+    transform: scale(1);
+    opacity: 1;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+.food .slide img{
+    height: 25rem;
+    margin-bottom: 1rem;
+}
+.food .slide h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+.food .slide .price{
+    font-size: 2.5rem;
+    color: var(--peru);
+}
 
+.food-preview-container{
+    background: var(--dark-bg);
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food-preview-container .food-preview{
+    text-align: center;
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    display: none;
+    width: 35rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.food-preview-container .food-preview.active{
+    display: inline-block;
+}
+.food-preview-container .food-preview img{
+    height: 25rem;
+    margin-bottom: 1rem;
+}
 
 
 
