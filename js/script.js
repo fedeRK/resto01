@@ -20,6 +20,7 @@ var swiper = new Swiper(".food-slider", {
     grabCursor:true,
     loop:true,
     centeredSlides:true,
+    spaceBetween:20,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -58,4 +59,38 @@ previewContainer.querySelector('#close-preview').onclick = () =>{
     previewBox.forEach(close =>{
         close.classList.remove('active');
     });
-}
+};
+
+var swiper = new Swiper(".menu-slider", {
+    grabCursor:true,
+    loop:true,
+    autoHeight:true,
+    centeredSlides:true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+var swiper = new Swiper(".blogs-slider", {
+    grabCursor:true,
+    loop:true,
+    centeredSlides:true,
+    autoHeight:true,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        700: {
+          slidesPerView: 2,
+        },
+        1000: {
+          slidesPerView: 3,
+        },
+    },
+});
